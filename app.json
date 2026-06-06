@@ -1,0 +1,75 @@
+{
+  "name": "SIMON TECH Bot",
+  "description": "Powerful WhatsApp Automation Bot with 200+ Commands",
+  "version": "2.0.0",
+  "repository": "https://github.com/bigitzfrank-lgtm/SIMON-TECH-bot2",
+  "author": "SIMON TECH",
+  "license": "MIT",
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "baileys",
+    "automation",
+    "chatbot",
+    "ai",
+    "group-management"
+  ],
+  "buttons": [
+    {
+      "label": "Deploy to Railway",
+      "url": "https://railway.app/new/template"
+    },
+    {
+      "label": "Deploy to Heroku",
+      "url": "https://heroku.com/deploy"
+    },
+    {
+      "label": "Get Session Code",
+      "url": "https://simontech.dev/session"
+    }
+  ],
+  "env": [
+    {
+      "key": "BOT_NAME",
+      "description": "Name of your bot",
+      "value": "SIMON"
+    },
+    {
+      "key": "BOT_PREFIX",
+      "description": "Command prefix",
+      "value": "."
+    },
+    {
+      "key": "OWNER_NUMBER",
+      "description": "Owner WhatsApp number with country code",
+      "value": "2349166265317"
+    },
+    {
+      "key": "OWNER_NAME",
+      "description": "Owner name",
+      "value": "SIMON TECH"
+    },
+    {
+      "key": "PORT",
+      "description": "Server port",
+      "value": "3000"
+    },
+    {
+      "key": "NODE_ENV",
+      "description": "Environment",
+      "value": "production"
+    }
+  ],
+  "features": [
+    "✨ 200+ Commands",
+    "🤖 AI Integration",
+    "👥 Group Management",
+    "📥 Media Downloads",
+    "🎮 Games & Entertainment",
+    "🛡️ Security Features",
+    "📊 Admin Dashboard",
+    "🎨 Media Tools",
+    "🔐 Privacy Controls",
+    "📱 Fully Responsive"
+  ]
+}
