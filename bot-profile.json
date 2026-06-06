@@ -1,0 +1,67 @@
+{
+  "botName": "SIMON-TECH-bot2",
+  "version": "2.1.0",
+  "description": "SIMON-TECH WhatsApp Bot - Upgraded Edition with GitHub Automation",
+  "author": "Simon Tech",
+  "maintainer": "bigitzfrank-lgtm",
+  "repository": "https://github.com/bigitzfrank-lgtm/SIMON-TECH-bot2",
+  "language": "JavaScript",
+  "type": "WhatsApp & GitHub Bot",
+  "status": "active",
+  "createdAt": "2026-06-06",
+  "lastUpdated": "2026-06-06",
+  "capabilities": {
+    "whatsappAutomation": true,
+    "githubIntegration": true,
+    "issueManagement": true,
+    "pullRequestHandling": true,
+    "codeReview": true,
+    "notifications": true,
+    "logging": true,
+    "messageProcessing": true,
+    "sessionManagement": true
+  },
+  "features": [
+    "WhatsApp message automation",
+    "GitHub webhook integration",
+    "Automated issue processing",
+    "Pull request notifications",
+    "Code quality alerts",
+    "Real-time notifications",
+    "Advanced logging system",
+    "Session management",
+    "QR code authentication",
+    "Multi-platform support"
+  ],
+  "mainDependencies": [
+    "@whiskeysockets/baileys - WhatsApp Web API",
+    "express - Web framework",
+    "axios - HTTP client",
+    "dotenv - Environment variables",
+    "qrcode - QR code generation",
+    "chalk - Terminal colors",
+    "moment - Date/time handling"
+  ],
+  "primaryFunctions": {
+    "whatsapp": "Handle WhatsApp messages and automation",
+    "github": "Process GitHub webhooks and events",
+    "session": "Manage authentication sessions",
+    "notifications": "Send real-time notifications",
+    "logging": "Track bot activity and errors"
+  },
+  "nodeVersion": ">=20.0.0",
+  "npmVersion": ">=9.0.0",
+  "permissions": [
+    "github:repo",
+    "github:workflow",
+    "github:issues",
+    "github:pull_requests",
+    "whatsapp:messages",
+    "whatsapp:media"
+  ],
+  "contacts": {
+    "maintainer": "bigitzfrank-lgtm",
+    "author": "Simon Tech",
+    "issueTracker": "https://github.com/bigitzfrank-lgtm/SIMON-TECH-bot2/issues"
+  }
+}
