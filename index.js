@@ -239,9 +239,6 @@ app.get('/', (req, res) => {
           display: inline-block;
         }
         .button:hover { transform: translateY(-2px); }
-        .button-secondary {
-          background: #17a2b8;
-        }
       </style>
     </head>
     <body>
@@ -261,7 +258,7 @@ app.get('/', (req, res) => {
           • And Much More!
         </div>
         
-        <a href="/panel" class="button button-secondary">📊 Admin Panel</a>
+        <a href="/panel" class="button">📊 Admin Panel</a>
         <a href="https://github.com/simontech-maxb/SIMON-TECH-Bot2" class="button" target="_blank">
           📚 View on GitHub
         </a>
