@@ -1,301 +1,365 @@
-# 🤖 SIMON-TECH-BOT v2.0
+# 🐺 SIMON TECH - WhatsApp Bot
 
-A powerful WhatsApp bot built with [Baileys](https://github.com/WhiskeySockets/Baileys). Works on Windows, macOS, and Linux.
+> "The moon watches..." 🌙
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Fsimontech-maxb%2FSIMON-TECH-Bot2&envs=SESSION_ID%2CBOT_NAME%2CBOT_PREFIX%2COWNER_NUMBER&optionalEnvs=SESSION_ID&SESSION_IDDescription=Your%20WhatsApp%20Session%20ID&BOT_NAMEDefault=SIMON&BOT_PREFIXDefault=.&OWNER_NUMBERDefault=2349166265317)
+[![GitHub stars](https://img.shields.io/github/stars/bigitzfrank-lgtm/SIMON-TECH-bot2?style=social)](https://github.com/bigitzfrank-lgtm/SIMON-TECH-bot2)
+[![GitHub forks](https://img.shields.io/github/forks/bigitzfrank-lgtm/SIMON-TECH-bot2?style=social)](https://github.com/bigitzfrank-lgtm/SIMON-TECH-bot2/fork)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-green?logo=node.js)](https://nodejs.org)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
----
-
-## ✨ Features
-
-- ✅ **QR Code & Phone Number Pairing** - Two methods to connect WhatsApp
-- ✅ **Fast Responses** - Lightning-quick bot replies
-- ✅ **Auto Replies** - Smart message automation
-- ✅ **Command System** - Easy-to-use prefix commands
-- ✅ **Uptime Tracking** - Monitor bot performance
-- ✅ **Group Support** - Works in groups and DMs
-- ✅ **Easy Deployment** - Deploy to Railway with one click
-- ✅ **Customizable** - Modify commands and settings easily
-
----
+A powerful, fully-featured WhatsApp automation bot built with Node.js and Baileys v7. Fast, intelligent, and always watching.
 
 ## 🚀 Quick Start
 
-### 1️⃣ Generate Session
+### One-Click Deploy
+- [![Railway](https://railway.app/button.svg)](https://railway.app/new/template)
+- [![Heroku](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy)
 
-```bash
-npm install
-npm run session
-```
-
-Then open `http://localhost:3000` and choose:
-- **📱 QR Code**: Scan with WhatsApp
-- **☎️ Phone Number**: Use pairing code method
-
-### 2️⃣ Deploy to Railway
-
-Click the button above or:
-- Set `SESSION_ID` environment variable
-- Deploy automatically
-
-### 3️⃣ Use Your Bot
-
-Send commands in WhatsApp:
-```
-.menu    - Show all commands
-.ping    - Check speed
-.alive   - Bot status
-.help    - Get help
-```
-
----
-
-## 📥 Installation
-
-### Prerequisites
-- Node.js 14+ or Railway account
-- WhatsApp account
-
-### Local Setup
+### Local Installation
 
 ```bash
 # Clone repository
-git clone https://github.com/simontech-maxb/SIMON-TECH-Bot2.git
-cd SIMON-TECH-Bot2
+git clone https://github.com/bigitzfrank-lgtm/SIMON-TECH-bot2.git
+cd SIMON-TECH-bot2
 
 # Install dependencies
 npm install
 
-# Generate session
+# Generate WhatsApp session
 npm run session
 
-# Create .env file
+# Configure bot
 cp .env.example .env
-
-# Edit .env with your SESSION_ID
+# Edit .env with your settings
 
 # Start bot
 npm start
 ```
 
-### Development Mode
+**Access Admin Panel:** http://localhost:3000/panel
 
-```bash
-npm run dev    # Auto-reload on file changes
-```
+## ✨ Features
 
----
+### 🤖 AI Integration
+- ChatGPT & Gemini Integration
+- Code Generation & Analysis
+- Image Analysis & Understanding
+- Multiple AI Models Support
 
-## 🎯 Available Commands
+### 👥 Group Management
+- Add/Kick Members
+- Promote/Demote Admins
+- Mute/Unmute Groups
+- Warning System
+- Ban Management
+- Anti-link Protection
+- Welcome/Goodbye Messages
 
-| Command | Description |
-|---------|-------------|
-| `.menu` | Show all available commands |
-| `.ping` | Check bot response time |
-| `.alive` | Show bot status & uptime |
-| `.help` | Display help information |
-| `.uptime` | Show how long bot is running |
-| `.owner` | Get owner information |
+### 📥 Media Downloads
+- TikTok Videos
+- Instagram Content
+- Facebook Videos
+- YouTube (MP3/MP4)
+- Spotify Tracks
+- Snapchat Stories
 
----
+### 🎮 Entertainment & Games
+- TicTacToe Game
+- Snake Game
+- Tetris Game
+- Quiz Games
+- Truth or Dare
+- Rock Paper Scissors
+- Meme Generator
 
-## 🛠️ Configuration
+### 🛡️ Security & Auto Features
+- Anti-Spam Protection
+- Auto-Read Messages
+- Auto-Typing Indicator
+- Auto-Recording
+- Auto-React to Stories
+- Profile Picture Privacy
+- Last Seen Control
 
-Edit `.env` file:
+### 🎨 Media Tools
+- Sticker Creator
+- Image Converter
+- Audio Converter
+- Text to Speech
+- QR Code Generator
+- Image Editor
+- Logo Designer
+
+### 📊 Admin Dashboard
+- Real-time Statistics
+- Bot Status Monitor
+- Bot Controls (Restart, Pause, Shutdown)
+- Message Broadcasting System
+- System Logs Viewer
+- Settings Configuration
+- Live Performance Metrics
+
+## 📋 Core Commands
+
+| Category | Commands |
+|----------|----------|
+| **System** | `.ping` `.alive` `.menu` `.uptime` `.owner` `.status` |
+| **Group** | `.kick` `.add` `.promote` `.demote` `.tagall` `.mute` `.antilink` |
+| **Media** | `.play` `.ytmp3` `.ytmp4` `.tiktok` `.instagram` `.facebook` |
+| **AI** | `.ai` `.gpt` `.imagine` `.code` `.translate` |
+| **Fun** | `.joke` `.meme` `.truth` `.dare` `.rps` `.dice` |
+| **Utility** | `.weather` `.wiki` `.define` `.news` `.qr` `.timer` |
+
+## 🔧 Configuration
+
+Edit `.env`:
 
 ```env
-# Session
-SESSION_ID=your_generated_session_id
-
 # Bot Settings
 BOT_NAME=SIMON
 BOT_PREFIX=.
 BOT_VERSION=2.0.0
 
-# Owner Info
+# Owner Information
 OWNER_NUMBER=2349166265317
 OWNER_NAME=SIMON TECH
 
-# Features
-ENABLE_AUTO_REPLY=true
+# Features Toggle
+ENABLE_AI=true
+ENABLE_GAMES=true
+ENABLE_SECURITY=true
+ENABLE_ECONOMY=true
+AUTO_READ=false
+AUTO_TYPING=false
+
+# API Keys (Optional)
+OPENAI_API_KEY=your_key_here
+RAPIDAPI_KEY=your_key_here
 
 # Server
 PORT=3000
 NODE_ENV=production
 ```
 
----
+## 📦 Requirements
 
-## 🚂 Deploy to Railway
+- **Node.js** v18+
+- **npm** v9+
+- **WhatsApp Account**
+- **Internet Connection**
 
-### Option 1: One-Click Deploy (Easiest)
+## 🌐 Deployment Platforms
 
-Click the Railway button at the top ☝️
+| Platform | Setup | Status |
+|----------|-------|--------|
+| Railway | ✅ 1-Click | ✅ Recommended |
+| Heroku | ✅ Easy | ✅ Supported |
+| Docker | ✅ Ready | ✅ Supported |
+| VPS/Ubuntu | ✅ Guide | ✅ Supported |
+| Termux | ✅ Possible | ✅ Supported |
 
-### Option 2: Manual Deployment
-
-1. Go to [railway.app](https://railway.app)
-2. Create new project
-3. Connect GitHub repository
-4. Add environment variables
-5. Deploy automatically
-
-### Option 3: Using Railway CLI
-
-```bash
-npm install -g railway
-railway login
-railway link
-railway up
-```
-
----
-
-## 📱 Session Generator Methods
-
-### Method 1: QR Code (Recommended)
-
-1. Run `npm run session`
-2. Open browser to `http://localhost:3000`
-3. Click **"Generate QR Code"**
-4. Scan with WhatsApp camera/app
-5. Copy SESSION_ID
-
-### Method 2: Phone Number Pairing
-
-1. Run `npm run session`
-2. Go to **"Phone Number"** tab
-3. Enter your number with country code
-4. Enter 8-digit pairing code from WhatsApp
-5. Copy SESSION_ID
-
----
-
-## 📊 Project Structure
-
-```
-SIMON-TECH-Bot2/
-├── index.js                 # Main bot file
-├── session-generator-v2.js  # Session generator (QR + Phone)
-├── menu.js                  # Menu commands
-├── config.js                # Configuration
-├── package.json             # Dependencies
-├── .env.example             # Environment template
-├── railway.json             # Railway config
-├── DEPLOYMENT.md            # Deployment guide
-└── README.md               # This file
-```
-
----
-
-## 🔐 Security Tips
-
-- ✅ Keep `SESSION_ID` secret
-- ✅ Never share `.env` file
-- ✅ Use strong owner number
-- ✅ Enable security features in `.env`
-- ✅ Regenerate session if compromised
-
----
-
-## 📈 Monitoring
-
-### Check Bot Status
+## 🐳 Docker Deployment
 
 ```bash
-.alive   # Shows uptime & stats
-.ping    # Measures response time
-.uptime  # Uptime duration
+# Build image
+docker build -t simon-tech-bot .
+
+# Run container
+docker run -e PORT=3000 \
+  -e BOT_NAME=SIMON \
+  -e OWNER_NUMBER=2349166265317 \
+  simon-tech-bot
 ```
 
-### Railway Dashboard
+## 📱 Admin Panel Features
 
-- View real-time logs
-- Monitor CPU/Memory
-- Check deployment status
-- Restart bot if needed
+Access your admin dashboard at `/panel`:
 
----
+### 📊 Dashboard
+- Real-time bot status
+- Uptime tracking
+- Message statistics
+- Active users count
+- Connected groups
+- Commands executed
 
-## 🐛 Troubleshooting
+### 📈 Statistics
+- Total messages processed
+- Total connected users
+- Active groups count
+- Commands executed count
+- Error tracking
+- Average response time
 
-### Bot Not Connecting
+### 🎮 Controls
+- Restart Bot
+- Reconnect to WhatsApp
+- Pause Bot
+- Resume Bot
+- Shutdown Bot
+- Clear Cache
 
-- Verify SESSION_ID is correct
-- Check internet connection
-- Regenerate session if expired
-- Check logs: `Railway Dashboard → Logs`
+### 📢 Broadcasting
+- Send to all users
+- Target specific groups
+- Send to private chats
+- Message composition
 
-### Session Expired
+### 📋 Logs
+- Real-time event logging
+- Timestamped entries
+- Searchable logs
+- Clear logs option
 
+### ⚙️ Settings
+- Configure bot name
+- Change command prefix
+- Update owner number
+- Toggle features
+- Security settings
+
+## 📁 Project Structure
+
+```
+SIMON-TECH-bot2/
+├── index.js                # Main bot with panel
+├── admin-panel.js          # Admin dashboard
+├── session-generator-v2.js # Session setup
+├── commands.js             # Command definitions
+├── menu.js                 # Bot menu
+├── botProfile.js           # Bot config
+├── package.json            # Dependencies
+├── Dockerfile              # Docker config
+├── app.json                # Deployment config
+├── .env.example            # Environment template
+├── README.md               # Documentation
+└── SETUP_GUIDE.md          # Setup instructions
+```
+
+## 🔗 API Endpoints
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/` | GET | Home page with bot info |
+| `/status` | GET | Bot status and statistics API |
+| `/panel` | GET | Admin dashboard |
+| `/panel/api/stats` | GET | Detailed statistics |
+| `/panel/api/broadcast` | POST | Send broadcast message |
+| `/panel/api/restart` | POST | Restart bot |
+
+## 🎓 Getting Started
+
+### Step 1: Setup
+```bash
+git clone https://github.com/bigitzfrank-lgtm/SIMON-TECH-bot2.git
+cd SIMON-TECH-bot2
+npm install
+```
+
+### Step 2: Generate Session
 ```bash
 npm run session
-# Generate new SESSION_ID and update .env or Railway variables
+# Scan QR code with WhatsApp
 ```
 
-### Permission Denied
+### Step 3: Configure
+```bash
+cp .env.example .env
+# Edit settings
+```
+
+### Step 4: Run
+```bash
+npm start
+```
+
+### Step 5: Access Panel
+Open: `http://localhost:3000/panel`
+
+## ⚠️ Troubleshooting
+
+### QR Code Not Showing?
+Open `http://localhost:3000` in your browser
+
+### Bot Won't Connect?
+```bash
+rm -rf sessions/
+npm run session
+```
+
+### Port Already in Use?
+```bash
+PORT=3001 npm start
+```
+
+### Commands Not Working?
+- Check bot prefix (default: `.`)
+- Ensure bot has group permissions
+- Verify command syntax in commands.js
+
+### Session Expired?
+```bash
+npm run session
+# Generate and copy new SESSION_ID
+```
+
+## 🔐 Security
+
+⚠️ **Important Notes:**
+- Never share your `.env` file
+- Don't commit session data to git
+- Use strong passwords for owner
+- Enable security features in .env
+- Monitor logs regularly
+- Regenerate session if compromised
+
+## 📄 NPM Scripts
 
 ```bash
-# Linux/Mac
-chmod +x *.js
-npm start
-
-# Or use Node directly
-node index.js
+npm start          # Start bot
+npm run dev        # Development mode with auto-reload
+npm run session    # Generate WhatsApp session
+npm run logs       # View bot logs
 ```
 
----
+## 🤝 Contributing
 
-## 📝 Common Issues
+Contributions welcome! Please:
+1. Fork the repository
+2. Create feature branch
+3. Commit changes
+4. Push to branch
+5. Submit Pull Request
 
-| Issue | Solution |
-|-------|----------|
-| QR Code not displaying | Refresh browser, check port 3000 |
-| Session generation fails | Ensure WhatsApp is updated |
-| Bot offline on Railway | Check environment variables |
-| Commands not working | Verify prefix (default: `.`) |
+## 📞 Support
 
----
+- 📧 **Email:** support@simontech.dev
+- 💬 **WhatsApp:** +2349166265317
+- 🐙 **GitHub Issues:** [Report Bug](https://github.com/bigitzfrank-lgtm/SIMON-TECH-bot2/issues)
+- 📖 **Documentation:** [Setup Guide](SETUP_GUIDE.md)
 
-## 🎓 Learning Resources
+## 📝 License
 
-- [Baileys Documentation](https://github.com/WhiskeySockets/Baileys)
-- [Railway Documentation](https://docs.railway.app)
-- [Node.js Guide](https://nodejs.org/docs)
+MIT License - See [LICENSE](LICENSE) for details
 
----
+## 👨‍💻 Author
 
-## 📞 Support & Contributions
+**SIMON TECH** - [@bigitzfrank-lgtm](https://github.com/bigitzfrank-lgtm)
 
-- **Report Bug**: [GitHub Issues](https://github.com/simontech-maxb/SIMON-TECH-Bot2/issues)
-- **Suggest Feature**: Open an issue with `[FEATURE]` prefix
-- **Contribute**: Fork and send pull requests
+## 🌟 Show Support
 
----
-
-## 📜 License
-
-MIT License - feel free to use and modify
+Give us a ⭐ if this project helped you!
 
 ---
 
-## ⭐ If You Like This Project
+<div align="center">
 
-- Give it a **star** ⭐
-- **Share** with others
-- **Follow** for updates
-- **Contribute** improvements
+**POWERED BY SIMON TECH**
 
----
+*The moon watches... 🌙*
 
-## 🙏 Credits
+© 2026 SIMON TECH Bot. All Rights Reserved.
 
-- Built with [Baileys](https://github.com/WhiskeySockets/Baileys)
-- Hosted on [Railway](https://railway.app)
-- Deployed with ❤️ by SIMON TECH
+[Deploy Now](#-quick-start) • [Documentation](#-quick-start) • [Support](#-support)
 
----
-
-**Made with 💻 and ☕ by SIMON TECH**
-
-🚀 Happy Botting! 🤖
+</div>
