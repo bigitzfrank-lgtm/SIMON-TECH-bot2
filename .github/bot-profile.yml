@@ -1,0 +1,120 @@
+name: SIMON-TECH-bot2
+version: "2.1.0"
+description: SIMON-TECH WhatsApp Bot - Upgraded Edition with GitHub Automation
+author: Simon Tech
+maintainer: bigitzfrank-lgtm
+repository: https://github.com/bigitzfrank-lgtm/SIMON-TECH-bot2
+language: JavaScript
+type: WhatsApp & GitHub Automation Bot
+status: Active
+
+metadata:
+  created: 2026-06-06
+  lastUpdated: 2026-06-06
+  license: MIT
+  engine:
+    node: ">=20.0.0"
+    npm: ">=9.0.0"
+
+capabilities:
+  whatsappAutomation: true
+  githubIntegration: true
+  issueManagement: true
+  pullRequestHandling: true
+  codeReview: true
+  notifications: true
+  logging: true
+  messageProcessing: true
+  sessionManagement: true
+
+features:
+  - WhatsApp message automation and handling
+  - GitHub webhook integration and processing
+  - Automated GitHub issue triaging
+  - Pull request notifications and alerts
+  - Code quality monitoring
+  - Real-time notification system
+  - Advanced activity logging
+  - Session and authentication management
+  - QR code generation and verification
+  - Multi-platform compatibility
+
+mainDependencies:
+  "@whiskeysockets/baileys":
+    version: "^6.7.16"
+    description: WhatsApp Web API client
+  "express":
+    version: "^4.21.0"
+    description: Web server framework
+  "axios":
+    version: "^1.7.7"
+    description: HTTP client for API requests
+  "dotenv":
+    version: "^16.4.5"
+    description: Environment variable management
+  "qrcode":
+    version: "^1.5.3"
+    description: QR code generation
+  "chalk":
+    version: "^5.3.0"
+    description: Terminal string styling
+  "moment":
+    version: "^2.29.4"
+    description: Date and time handling
+
+primaryFunctions:
+  whatsapp:
+    description: Handle WhatsApp messages and automation
+    file: index.js
+  github:
+    description: Process GitHub webhooks and events
+    file: index.js
+  session:
+    description: Manage authentication sessions
+    file: session-generator-v2.js
+  notifications:
+    description: Send real-time notifications
+  logging:
+    description: Track bot activity and errors
+
+scripts:
+  start:
+    command: "npm start"
+    description: Run the bot in production mode
+  dev:
+    command: "npm run dev"
+    description: Run the bot in development mode with auto-reload
+  session:
+    command: "npm run session"
+    description: Generate WhatsApp session
+  test:
+    command: "npm test"
+    description: Run tests
+
+permissions:
+  github:
+    - read:repo_hook
+    - write:repo_hook
+    - read:user
+    - write:discussion
+    - read:org
+    - write:packages
+  whatsapp:
+    - read:messages
+    - write:messages
+    - read:contacts
+    - read:groups
+
+contacts:
+  maintainer: bigitzfrank-lgtm
+  author: Simon Tech
+  issueTracker: https://github.com/bigitzfrank-lgtm/SIMON-TECH-bot2/issues
+  documentation: BOT_PROFILE.md
+
+tags:
+  - whatsapp-bot
+  - github-bot
+  - automation
+  - javascript
+  - baileys
+  - devops
